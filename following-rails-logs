@@ -1,0 +1,4 @@
+rake routes to find contorller/method (product#index)
+go to controller (app/controllers/products_controller) find the data that is being passed in from the model [in this case to index method due to the product#index from above], passed to the view (@products) 
+find the view (app/views/products/index.html.erb) and see where the data is going in the partial (app/views/products/index.html_product.html)
+

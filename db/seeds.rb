@@ -21,6 +21,7 @@ end
 
 # Let's do this ...
 
+
 ## CATEGORIES
 
 puts "Finding or Creating Categories ..."
@@ -132,5 +133,77 @@ cat3.products.create!({
   price: 2_483.75
 })
 
+## REVIEWS
+
+Review.create!({
+  product_id: 11,
+  user_id: 1,
+  description: Faker::Hipster.paragraph(4),
+  rating: 4
+})
+
+Review.create!({
+  product_id: 11,
+  user_id: 2,
+  description: Faker::Hipster.paragraph(4),
+  rating: 3
+  
+})
+
+Review.create!({
+  product_id: 11,
+  user_id: 3,
+  description: Faker::Hipster.paragraph(4),
+  rating: 2
+})
+
+Review.create!({
+  product_id: 14,
+  user_id: 4,
+  description: Faker::Hipster.paragraph(4),
+  rating: 1 
+})
+
+Review.create!({
+  product_id: 15,
+  user_id: 5,
+  description: Faker::Hipster.paragraph(4),
+  rating: 5 
+})
+
+Review.create!({
+  product_id: 16,
+  user_id: 6,
+  description: Faker::Hipster.paragraph(4),
+  rating: 4 
+})
+
+Review.create!({
+  product_id: 17,
+  user_id: 7,
+  description: Faker::Hipster.paragraph(4),
+  rating: 4 
+})
+
+Review.create!({
+  product_id: 18,
+  user_id: 8,
+  description: Faker::Hipster.paragraph(4),
+  rating: 5 
+})
+
+Review.create!({
+  product_id: 19,
+  user_id: 9,
+  description: Faker::Hipster.paragraph(4),
+  rating: 1 
+})
+
+Review.create!({
+  product_id: 20,
+  user_id: 10,
+  description: Faker::Hipster.paragraph(4),
+  rating: 3 
+})
 
 puts "DONE!"

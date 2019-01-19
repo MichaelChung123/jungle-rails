@@ -1,6 +1,8 @@
 class CartsController < ApplicationController
 
   def show
+    flash.now[:notice] = "Your cart is empty! Please add an item before checkout."
+    redirect_to :back
   end
 
   def add_item

@@ -26,6 +26,15 @@
       </div>
     </div>
 
+    <div>
+      <%= form_for [@product, @review] do |f|%>
+         <%= f.label :rating %>
+         <%= f.label :review %>
+         <%= f.text_field :description %>
+       <%= f.submit 'Review this product' %>
+      <% end %>
+   </div>
+
     <% @product.reviews.each do |review| %>
       <div class="row">
         <ul>Rating: <%= review.rating %> </ul>
